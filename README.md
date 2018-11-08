@@ -88,4 +88,7 @@ $ python3 simple_request.py
 
 Since the image is opened by opencv, please use the simple_request.py as the client for sending pictures instead of curl and any other tool.
 
+## Future extension
+Adding message broker like redis and celery
 
+Adding more robust image processing
