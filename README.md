@@ -31,14 +31,19 @@ $ git clone https://github.com/frankie-yanfeng/Deeplearning-Image-Classification
 ## Dataset:
 The dataset is pikachu cartoon pictures which are collected by running below script:
 
+
 $ python3 ./search_bing_api.py -q your_Interested_Category -o file_Saved_Path
+
 
 e.g.
 $ sudo python3 ./search_bing_api.py -q room -o ./Dataset/background
 
+
 And before running, you will need to put in your own microsoft cognitive images search API KEY:
 
+
 API_KEY = "XXXXXXXXXXXXXXXX"
+
 
 For this project, below categories are created and collected. The first five ones are cartoon pictures,
 while last one is indoor room pictures which are taken as background for unknown objects 
@@ -64,9 +69,9 @@ The architecture is defined in dnn_network/smallervggnet.py
 ## Training model
 $ python3 train.py -d ./pikachu_Dataset -m pikachu_trained_model.model -l labelbin.pickle -p plotPic.png
 
-plotPic.png shows the whole learning process:
-
 ![learning Result](Result1.png)
+
+plotPic.png shows the whole learning process:
 ![learning Curve](plotPic.png)
 
 ## Pretrained model
@@ -76,7 +81,7 @@ https://drive.google.com/file/d/1sWLOTxCm9HQF8nTlSVlANge1h63vKtfJ/view?usp=shari
 ## Verifying model
 $ python3 classify.py -m pikachu_trained_model.model -l labelbin.pickle -i ./test/background1.jpg
 
-$ python3 classify.py -m pikachu_trained_model.model -l labelbin.pickle -i ./test/background2.jpg
+$ python3 classify.py -m pikachu_trained_model.model -l labelbin.pickle -i ./test/charmander_1.jpeg
 
 ![classificationResult Curve](classificationResult.png)
 ![learningclassificationResult1Curve](classificationResult1.png)
