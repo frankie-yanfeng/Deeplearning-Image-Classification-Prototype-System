@@ -66,6 +66,7 @@ $ python3 train.py -d ./pikachu_Dataset -m pikachu_trained_model.model -l labelb
 
 plotPic.png shows the whole learning process:
 
+![learning Result](Result1.png)
 ![learning Curve](plotPic.png)
 
 ## Pretrained model
@@ -76,6 +77,10 @@ https://drive.google.com/file/d/1sWLOTxCm9HQF8nTlSVlANge1h63vKtfJ/view?usp=shari
 $ python3 classify.py -m pikachu_trained_model.model -l labelbin.pickle -i ./test/background1.jpg
 
 $ python3 classify.py -m pikachu_trained_model.model -l labelbin.pickle -i ./test/background2.jpg
+
+![classificationResult Curve](classificationResult.png)
+![learningclassificationResult1Curve](classificationResult1.png)
+
 
 ## Running flask server and client
 $ cd keras_flask_opencv_api
