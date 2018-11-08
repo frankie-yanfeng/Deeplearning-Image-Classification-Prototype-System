@@ -97,3 +97,5 @@ Since the image is opened by opencv, please use the simple_request.py as the cli
 Adding message broker like redis and celery
 
 Adding more robust image processing
+
+Merging caffe models into this repo
