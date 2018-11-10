@@ -38,7 +38,8 @@ def loadModel():
 	#model = ResNet50(weights="imagenet")
 
 	print("[INFO] loading network...")
-	model = load_model("../trained_model.model")
+	#model = load_model("../trained_model.model")
+	model = load_model("../pikachu_trained_model.model")
 	
 	# this is key : save the graph after loading the model
 	global graph
