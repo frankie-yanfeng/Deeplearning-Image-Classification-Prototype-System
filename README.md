@@ -3,27 +3,8 @@
 Keras + Deeplearning + flask REST API + opencv full example
 
 ## Getting started
-$ pip install requests
+pip install -r requirements.txt
 
-$ pip install opencv-python
-
-$ pip install flask  
-
-$ pip install gevent
-
-$ pip install requests
-
-$ pip install keras
-
-$ pip install tensorflow
-
-$ pip install -U scikit-learn
-
-$ pip install numpy
-
-$ pip install matplotlib
-
-$ pip install imutils
 
 ## Download the code
 $ git clone https://github.com/frankie-yanfeng/Deeplearning-Image-Classification-Prototype-System.git
